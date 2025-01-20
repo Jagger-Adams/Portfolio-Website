@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagger Adams | Home</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png" sizes="16x16">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="sideMenu">
+            <div id="topMenu">
+                <p>Jagger Adams</p>
+                <img id="xIcon" src="images/xIcon.png" onclick="sideMenu()">
+            </div>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <button class="linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                    <img class="linkedIn" src="images/linkedin.png">
+                </button>
+            </ul>
+            <a id="sideMenuEmail" href="mailto:jaggeradams77@gmail.com">jaggeradams77@gmail.com</a>
+        </div>
+        <section id="sect1">
+            <div id="menu" class="b1 fade">
+                <h2>Jagger Adams</h2>
+                <div>
+                    <button onclick="window.location.href='index.html'" class="menuBtn">About</button>
+                    <button onclick="window.location.href='work.html'" class="menuBtn">Work</button>
+                    <button onclick="window.location.href='resume.html'" class="menuBtn">Resume</button>
+                    <button class="menuBtn linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                        <img class="linkedIn" src="images/linkedin.png">
+                    </button>
+                    <button id="menuButton" onclick="sideMenu()">
+                        <img src="images/menuButton.png">
+                    </button>
+                </div>
+            </div>
+            <div id="scrollMenu">
+                <h2>Jagger Adams</h2>
+                <div>
+                    <button onclick="window.location.href='index.html'" class="menuBtn">About</button>
+                    <button onclick="window.location.href='work.html'" class="menuBtn">Work</button>
+                    <button onclick="window.location.href='resume.html'" class="menuBtn">Resume</button>
+                    <button class="menuBtn linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                        <img class="linkedIn" src="images/linkedin.png">
+                    </button>
+                    <button id="scrollMenuButton" onclick="sideMenu()">
+                        <img src="images/menuButton.png">
+                    </button>
+                </div>
+            </div>
+        
+            <div class="box b2 trans fade" id="imgBox">
+                <img src="images/profpic.png" id="profPic" style="height: 400px;">
+            </div>
+            <div class="box b2 fade" id="desc">
+                <h1>Computer Science Student</h1>
+                <p>Hi! I'm a computer science major at Western University.
+                     My academic experience has equipped me with skills in programming, algorithm design, and software development.
+                     I'm eager to apply my knowledge to real-world challenges and contribute to large-scale meaningful projects.
+                      I'm currently seeking an internship position for the term starting May 2025.</p>
+            </div>
+
+        </section>
+        <section id="sect2">
+            <div class="glowingBackground fade">
+                <div class="innerDiv box b1">
+                    <div id="keySkillsText">
+                        <h1>Key Skills</h1>
+                        <p>My coursework and personal projects have given me experience in programming, web development, data structures & algorithms, and math</p>
+                    </div>
+                    <div id="keySkillsBox">
+                        <div class="skillBox fade delay">
+                            <img src="images/code.png">
+                            <h2>Programming</h2>
+                            <p>Created applications in Java, Python, and C</p>
+                        </div>
+                        <div class="skillBox fade delay">
+                            <img src="images/webDev.png">
+                            <h2>Web Development</h2>
+                            <p>Developed various websites in HTML, CSS, and JavaScript</p>
+                        </div>
+                        <div class="skillBox fade delay">
+                            <img src="images/dataStruct.png">
+                            <h2>Data Stucture & Algorithms</h2>
+                            <p>Taken multiple courses on fundamental coding concepts like Data Structures & Algorithms (E.g. CS 1027, CS 2210, etc.)</p>
+                        </div>
+                        <div class="skillBox fade delay">
+                            <img src="images/math.png">
+                            <h2>Math</h2>
+                            <p>Received the Slater Award for excellence in Mathematics in grade 12 at GCI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sect3">
+            <h1 id="personalTitle">Personal</h1>
+            <div class="glowingBackground fade bottom">
+                <div class="personalBox">
+                    <h1>Sports</h1>
+                    <img src="images/bench.gif" class="personalImg fade">
+                    <img src="images/ski.png" class="personalImg fade">
+                    <img src="images/golf.gif" class="personalImg fade">
+                    <img src="images/jetski.JPG" class="personalImg fade">
+                </div>
+            </div>
+            <div class="glowingBackground fade bottom">
+                <div class="personalBox">
+                    <h1>Travel</h1>
+                    <img src="images/timeSquare.jpg" class="personalImg fade">
+                    <img src="images/waves.gif" class="personalImg fade">
+                    <img src="images/jungle.jpg" class="personalImg fade">
+                    <img src="images/volleyball.gif" class="personalImg fade">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footerBox">
+                <div id="footerText">
+                    <h2>This portfolio was coded from scratch by Jagger Adams</h2>
+                    <p>Email: <a href="mailto:jaggeradams77@gmail.com">jaggeradams77@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

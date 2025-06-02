@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-position: center;
+}
+
+#sect1 {
+    background-image: url("images/background.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    background-color: rgba(90, 90, 90);
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vw;
+    background-color: white;
+    padding: 0.5vw 2.5vw;
+    border-radius: 1vw;
+    width: auto;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    position: relative; 
+    flex-basis: 93%;
+}
+
+#scrollMenu {
+    visibility: hidden;   
+    opacity: 0;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0.5vw 2.5vw;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+#scrollMenu.show {
+    visibility: visible; 
+    opacity: 1;          
+    transform: translateY(0); 
+}
+
+#sideMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -270px;
+    overflow-y: auto;
+    background-image: url('images/texture4.png');
+    background-color: rgb(100, 100, 100);
+    opacity: 1;
+    z-index: 99999;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.4s ease-out;
+}
+
+#sideMenu.show {
+    transform: translateX(270px); 
+}
+
+#sideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sideMenu ul li{
+    padding: 15px;
+}
+
+#sideMenu .linkedIn{
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#sideMenu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease-out
+}
+
+
+#sideMenu ul li a {
+    font-family: 'Inter', sans-serif;
+    display: block;
+    transform: translateX(0);
+}
+
+#sideMenu a:hover{
+    color: rgb(38, 102, 161);
+}
+
+#sideMenu ul li a:hover, #sideMenu .linkedIn:hover {
+    transform: translateX(3px);
+}
+
+#sideMenuEmail{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+#topMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-weight: 700;
+}
+
+#xIcon{
+    width: 35px;
+    height: 35px;
+    transition: filter 0.5s;
+    cursor: pointer;
+    margin: 7px;
+}
+
+#xIcon:hover{
+    filter: brightness(0.7);
+}
+
+#menuButton,
+#scrollMenuButton {
+    display: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#scrollMenuButton{
+    z-index: 99999;
+}
+
+#menuButton img,
+#scrollMenuButton img { 
+    width: 30px;
+}
+
+.menuBtn {
+    background-color: rgb(220, 220, 220);
+    border-color: transparent;
+    font-weight: 600;
+    border-radius: 7px;
+    font-size: 1em;
+    margin-right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    opacity: 1;
+}
+
+.menuBtn:hover {
+    color: rgb(38, 102, 161);
+    transform: translateY(-3px);
+}
+
+.linkedIn {
+    width: 18px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.linkedIn:hover {
+    content: url('images/linkedinHover.png');
+    transform: scale(1.15);
+}
+
+.trans{
+    background-color: transparent;
+}
+
+iframe{
+    width: 70vw;
+    height: 100vh;
+    border: none;
+    margin: 20px;
+}
+
+
+
+#footerText{
+    color: white;
+    padding: 30px;
+}
+
+#footerText a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    
+    #menuButton, #scrollMenuButton{
+        display: flex;
+    }
+    .menuBtn{
+        display: none;
+    }
+    
+    iframe{
+        height:80vh;
+        width: 90vw;
+    }
+
+    section{
+        height: auto;
+    }
+}

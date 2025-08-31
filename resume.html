@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagger Adams | Resume</title>
+    <link rel="icon" type="image/png" href="images/favicon1.png" sizes="16x16">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="sideMenu">
+            <div id="topMenu">
+                <p>Jagger Adams</p>
+                <img id="xIcon" src="images/xIcon.png" onclick="sideMenu()">
+            </div>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <button class="linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                    <img class="linkedIn" src="images/linkedin.png">
+                </button>
+            </ul>
+            <a id="sideMenuEmail" href="mailto:jaggeradams77@gmail.com">jaggeradams77@gmail.com</a>
+        </div>
+        <section id="sect1">
+            <div id="menu" class="b1 fade">
+                <h2>Jagger Adams</h2>
+                <div>
+                    <button onclick="window.location.href='index.html'" class="menuBtn">About</button>
+                    <button onclick="window.location.href='work.html'" class="menuBtn">Projects</button>
+                    <button onclick="window.location.href='resume.html'" class="menuBtn">Resume</button>
+                    <button class="menuBtn linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                        <img class="linkedIn" src="images/linkedin.png">
+                    </button>
+                    <button id="menuButton" onclick="sideMenu()">
+                        <img src="images/menuButton.png">
+                    </button>
+                </div>
+            </div>
+            <div id="scrollMenu">
+                <h2>Jagger Adams</h2>
+                <div>
+                    <button onclick="window.location.href='index.html'" class="menuBtn">About</button>
+                    <button onclick="window.location.href='work.html'" class="menuBtn">Projects</button>
+                    <button onclick="window.location.href='resume.html'" class="menuBtn">Resume</button>
+                    <button class="menuBtn linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jagger-adams/'">
+                        <img class="linkedIn" src="images/linkedin.png">
+                    </button>
+                    <button id="scrollMenuButton" onclick="sideMenu()">
+                        <img src="images/menuButton.png">
+                    </button>
+                </div>
+            </div>
+            <div id="resumeBox">
+                <iframe src="Portfolio Resume.pdf" width="100%" height="100%"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div id="footerBox">
+                <div id="footerText">
+                    <p><a href="mailto:jaggeradams77@gmail.com">jaggeradams77@gmail.com</a></p>
+                    <p>This portfolio was coded from scratch by Jagger Adams</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <script src="resume.js"></script>
+</body>
+</html>
